@@ -21,6 +21,8 @@ class ViewController: UIViewController {
             print("No Realm file exist")
         }
         
+  
+        //let theView:UIView = createdClass.init() // Should now give you a new object
         
 
         let path = NSBundle.mainBundle().pathForResource("Example_1", ofType: "json")!
@@ -31,7 +33,12 @@ class ViewController: UIViewController {
         print("============= Import JSON Objects =============")
         for jsonObject in jsonResult as! [[String : AnyObject]] {
             let product = Product(jsonObject: jsonObject)
-            print("product", product)
+            
+//
+//            print(Mirror(reflecting: product.tags))
+//            print(Mirror(reflecting: product.id))
+            
+//            print("product", product)
         }
         
         

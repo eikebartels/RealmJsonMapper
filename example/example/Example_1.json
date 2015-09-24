@@ -5,7 +5,7 @@
         "prices" :{
             "euro" : 100.50
         },
-        "tags": [
+        "awesomeTags": [
             {"name": "door"},
             {"name": "green"}
         ]

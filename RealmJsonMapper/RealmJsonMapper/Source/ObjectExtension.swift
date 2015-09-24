@@ -23,9 +23,29 @@ extension Object{
     }
     
     public convenience init(jsonObject: AnyObject){
-        print(self.dynamicType.mappingDictionary())
+        
+        RealmJsonMapper.convert(jsonObject, realmClass: self.dynamicType)
+        
+        for property in self.dynamicType.sharedSchema().properties{
+            print(property.name)
+            let appName = NSBundle.mainBundle().infoDictionary!["CFBundleName"] as! String
+            if let className = property.objectClassName{
+                if className.characters.count > 0 {
+                    if let subClass = NSClassFromString("\(appName).\(className)"){
+                        print(subClass.mappingDictionary?())
+                        
+                        
+                    }
+                }
+            }
+        }
         self.init(value: RealmJsonMapper.convert(jsonObject, mappingDictionary: self.dynamicType.mappingDictionary()))
     }
+
+    
+
+    
+    
     
     public class func create(jsonObject: AnyObject) -> Object{
         return Object(jsonObject: jsonObject)

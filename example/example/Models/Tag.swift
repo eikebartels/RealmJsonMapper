@@ -10,9 +10,11 @@ import RealmSwift
 
 class Tag: Object {
     
-// Specify properties to ignore (Realm won't persist these)
+    dynamic var name:String = ""
     
-//  override static func ignoredProperties() -> [String] {
-//    return []
-//  }
+
+    override class func mappingDictionary() -> [String : String] {
+        return ["tagName" : "name"]
+    }
+    
 }

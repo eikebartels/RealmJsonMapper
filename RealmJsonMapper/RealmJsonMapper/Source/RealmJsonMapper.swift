@@ -6,8 +6,14 @@
 //  Copyright © 2015 Eike Bartels. All rights reserved.
 //
 
+import RealmSwift
 
 class RealmJsonMapper {
+    
+    static func convert(jsonObject: AnyObject, realmClass:Object.Type) -> AnyObject?{
+    
+        return nil
+    }
     
     static func convert(jsonObject: AnyObject, mappingDictionary:[String : String]) -> AnyObject{
         if var dic = jsonObject as? [String: AnyObject] {
