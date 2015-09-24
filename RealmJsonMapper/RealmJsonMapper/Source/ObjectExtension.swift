@@ -8,21 +8,38 @@
 
 import RealmSwift
 
+
 extension Object{
     
-    internal class func  mappingDictionary() -> [String : String] {
-        return [ : ]
+    /**
+    Provide an array of objects to convert. Example [[key in json : key in model]]
+    
+    :param: nil
+    
+    :returns: An array of key value Objects [[key in json : key in model]]
+    */
+    public class func mappingDictionary() -> [String : String]{
+        return [:]
     }
     
-    convenience init(jsonObject: AnyObject){
+    public convenience init(jsonObject: AnyObject){
+        print(self.dynamicType.mappingDictionary())
         self.init(value: RealmJsonMapper.convert(jsonObject, mappingDictionary: self.dynamicType.mappingDictionary()))
     }
     
-    class func create(jsonObject: AnyObject) -> Object{
+    public class func create(jsonObject: AnyObject) -> Object{
         return Object(jsonObject: jsonObject)
     }
 
-    class func createfromArray(jsonArry: [AnyObject]) -> [Object]{
+    
+    /**
+    WARNING: swift 2.0 Bug with Type issue in Generic
+    
+    :param: jsonArry JSON Object Array
+    
+    :returns: An array of given Objects
+    */
+    public class func createfromArray(jsonArry: [AnyObject]) -> [Object]{
         var result:[Object] = []
         for jsonObject in jsonArry {
             result.append(Object(jsonObject: jsonObject))

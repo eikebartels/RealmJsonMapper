@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		16023F995A9712EF8A154D48 /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DE2EC660EE96240841BDF1D /* Pods_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		CE22D21B1BB3EBB3001BDC63 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE22D2191BB3EBB3001BDC63 /* Product.swift */; settings = {ASSET_TAGS = (); }; };
+		CE22D21C1BB3EBB3001BDC63 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE22D21A1BB3EBB3001BDC63 /* Tag.swift */; settings = {ASSET_TAGS = (); }; };
+		CE22D2351BB3F7AE001BDC63 /* RealmJsonMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE22D2321BB3F717001BDC63 /* RealmJsonMapper.framework */; };
+		CE22D2381BB3F7C4001BDC63 /* RealmJsonMapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE22D2321BB3F717001BDC63 /* RealmJsonMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE2FD0691BB3E57B0031DCEB /* Example_1.json in Resources */ = {isa = PBXBuildFile; fileRef = CE2FD0681BB3E57B0031DCEB /* Example_1.json */; settings = {ASSET_TAGS = (); }; };
 		CE36CB831B9C955D002D5BAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36CB821B9C955D002D5BAB /* AppDelegate.swift */; };
 		CE36CB851B9C955D002D5BAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36CB841B9C955D002D5BAB /* ViewController.swift */; };
 		CE36CB881B9C955D002D5BAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE36CB861B9C955D002D5BAB /* Main.storyboard */; };
@@ -17,6 +22,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		CE22D2311BB3F717001BDC63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE22D22C1BB3F717001BDC63 /* RealmJsonMapper.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CE36CB571B9C94DA002D5BAB;
+			remoteInfo = RealmJsonMapper;
+		};
+		CE22D2331BB3F717001BDC63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE22D22C1BB3F717001BDC63 /* RealmJsonMapper.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CE36CB621B9C94DA002D5BAB;
+			remoteInfo = RealmJsonMapperTests;
+		};
+		CE22D2361BB3F7B5001BDC63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE22D22C1BB3F717001BDC63 /* RealmJsonMapper.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = CE36CB561B9C94DA002D5BAB;
+			remoteInfo = RealmJsonMapper;
+		};
 		CE36CB931B9C955E002D5BAB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CE36CB751B9C955D002D5BAB /* Project object */;
@@ -26,10 +52,28 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		CE22D22B1BB3F000001BDC63 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CE22D2381BB3F7C4001BDC63 /* RealmJsonMapper.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		29C8C9E615C4784A70CE90E0 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		9DE2EC660EE96240841BDF1D /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B00EB73A1000AEDFB7001D9F /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
+		CE22D2191BB3EBB3001BDC63 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		CE22D21A1BB3EBB3001BDC63 /* Tag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		CE22D22C1BB3F717001BDC63 /* RealmJsonMapper.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RealmJsonMapper.xcodeproj; path = ../realmjsonmapper/RealmJsonMapper.xcodeproj; sourceTree = "<group>"; };
+		CE2FD0681BB3E57B0031DCEB /* Example_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Example_1.json; path = ../../example/example/Example_1.json; sourceTree = "<group>"; };
 		CE36CB7D1B9C955D002D5BAB /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE36CB811B9C955D002D5BAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE36CB821B9C955D002D5BAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE22D2351BB3F7AE001BDC63 /* RealmJsonMapper.framework in Frameworks */,
 				16023F995A9712EF8A154D48 /* Pods_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -78,6 +123,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CE22D2181BB3EBA5001BDC63 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE22D2191BB3EBB3001BDC63 /* Product.swift */,
+				CE22D21A1BB3EBB3001BDC63 /* Tag.swift */,
+			);
+			name = Models;
+			path = ../../example/example/Models;
+			sourceTree = "<group>";
+		};
+		CE22D22D1BB3F717001BDC63 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE22D2321BB3F717001BDC63 /* RealmJsonMapper.framework */,
+				CE22D2341BB3F717001BDC63 /* RealmJsonMapperTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		CE36CB741B9C955D002D5BAB = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +150,7 @@
 				CE36CB7E1B9C955D002D5BAB /* Products */,
 				6AA19CABDBA064637A7BBBFB /* Pods */,
 				7827D9A920539ADABB0B9CA4 /* Frameworks */,
+				CE22D22C1BB3F717001BDC63 /* RealmJsonMapper.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,8 +166,10 @@
 		CE36CB7F1B9C955D002D5BAB /* Example */ = {
 			isa = PBXGroup;
 			children = (
-				CE36CB821B9C955D002D5BAB /* AppDelegate.swift */,
+				CE2FD0681BB3E57B0031DCEB /* Example_1.json */,
+				CE22D2181BB3EBA5001BDC63 /* Models */,
 				CE36CB841B9C955D002D5BAB /* ViewController.swift */,
+				CE36CB821B9C955D002D5BAB /* AppDelegate.swift */,
 				CE36CB861B9C955D002D5BAB /* Main.storyboard */,
 				CE36CB891B9C955D002D5BAB /* Images.xcassets */,
 				CE36CB8B1B9C955D002D5BAB /* LaunchScreen.xib */,
@@ -149,10 +216,12 @@
 				CE36CB7B1B9C955D002D5BAB /* Resources */,
 				13A468B2BD633C51346F5B21 /* Embed Pods Frameworks */,
 				DD8542F9D7E677AD95FF9F2B /* Copy Pods Resources */,
+				CE22D22B1BB3F000001BDC63 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CE22D2371BB3F7B5001BDC63 /* PBXTargetDependency */,
 			);
 			name = Example;
 			productName = Example;
@@ -207,6 +276,12 @@
 			mainGroup = CE36CB741B9C955D002D5BAB;
 			productRefGroup = CE36CB7E1B9C955D002D5BAB /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CE22D22D1BB3F717001BDC63 /* Products */;
+					ProjectRef = CE22D22C1BB3F717001BDC63 /* RealmJsonMapper.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				CE36CB7C1B9C955D002D5BAB /* Example */,
@@ -215,6 +290,23 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		CE22D2321BB3F717001BDC63 /* RealmJsonMapper.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RealmJsonMapper.framework;
+			remoteRef = CE22D2311BB3F717001BDC63 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CE22D2341BB3F717001BDC63 /* RealmJsonMapperTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RealmJsonMapperTests.xctest;
+			remoteRef = CE22D2331BB3F717001BDC63 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		CE36CB7B1B9C955D002D5BAB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
@@ -222,6 +314,7 @@
 			files = (
 				CE36CB881B9C955D002D5BAB /* Main.storyboard in Resources */,
 				CE36CB8D1B9C955D002D5BAB /* LaunchScreen.xib in Resources */,
+				CE2FD0691BB3E57B0031DCEB /* Example_1.json in Resources */,
 				CE36CB8A1B9C955D002D5BAB /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,7 +381,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE22D21C1BB3EBB3001BDC63 /* Tag.swift in Sources */,
 				CE36CB851B9C955D002D5BAB /* ViewController.swift in Sources */,
+				CE22D21B1BB3EBB3001BDC63 /* Product.swift in Sources */,
 				CE36CB831B9C955D002D5BAB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +399,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		CE22D2371BB3F7B5001BDC63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RealmJsonMapper;
+			targetProxy = CE22D2361BB3F7B5001BDC63 /* PBXContainerItemProxy */;
+		};
 		CE36CB941B9C955E002D5BAB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CE36CB7C1B9C955D002D5BAB /* Example */;
@@ -417,6 +517,7 @@
 			baseConfigurationReference = 29C8C9E615C4784A70CE90E0 /* Pods-Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/eikebartels/Documents/Projects/RealmJsonMapper/RealmJsonMapper/build/Debug-iphoneos",
@@ -432,6 +533,7 @@
 			baseConfigurationReference = B00EB73A1000AEDFB7001D9F /* Pods-Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/eikebartels/Documents/Projects/RealmJsonMapper/RealmJsonMapper/build/Debug-iphoneos",

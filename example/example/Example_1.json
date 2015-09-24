@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "productName": "A green door",
+        "prices" :{
+            "euro" : 100.50
+        },
+        "tags": [
+            {"name": "door"},
+            {"name": "green"}
+        ]
+    },
+    {
+        "id": 2,
+        "productName": "A red door",
+        "price": 12.50
+    },
+    {
+        "id": 3,
+        "productName": "A orange door",
+        "price": 12.50
+    },
+]
